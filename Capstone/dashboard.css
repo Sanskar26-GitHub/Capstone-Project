@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 50px;
+}
+
+#logout {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #c0392b; 
+    border-radius: 5px;
+}
+
+#logout:hover {
+    background-color: #e74c3c; 
+}
+
+section {
+    padding: 20px;
+}
+
+.patient-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.patient-details {
+    flex: 1 1 300px; 
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px; 
+}
+
+.patient-details h2 {
+    text-align: center;
+}
+
+#patientVitals {
+    flex: 1 1 150px; 
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    margin-right: 90px;
+    margin-right: 50px;
+}
+
+#patientVitals h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#patientVitals p {
+    margin-bottom: 10px;
+}
+
+#patientForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#patientForm input,
+#patientForm select {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#patientForm button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#patientForm button:hover {
+    background-color: #555;
+}
