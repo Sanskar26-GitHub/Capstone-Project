@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css"> 
+</head>
+<body>
+    <header>
+        <h1>PATIENT DASHBOARD</h1>
+        <nav>
+            <ul>
+                <li><a href="patient_dashboard.html">Home</a></li>
+                <li><a href="patientabout.html">About Us</a></li>
+                <li><a href="patientcontact.html">Contact</a></li>
+                <li><span id="loggedInUser"></span></li> 
+                <li><a href="#" id="logout">Logout</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm" onsubmit="return bookAppointment()">
+            <label for="doctor">I want to make an appointment with:</label>
+            <select id="doctor" name="doctor" onchange="updateTimeSlots()">
+                <option value="Dr. Smith">Dr. Smith</option>
+                <option value="Dr. Johnson">Dr. Johnson</option>
+            </select><br><br>
+
+            <label for="date">Select Your Preferred Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="time">Select Appointment time:</label>
+            <select id="time" name="time" required>
+            </select><br><br>
+
+            <input type="submit" value="Book Appointment">
+        </form>
+    </section>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
